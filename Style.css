@@ -1,0 +1,45 @@
+ body {
+            background-color: #f9e5f4; /* Pink muda untuk latar belakang */
+        }
+
+        .card {
+            border-radius: 10px;
+            background-color: #ffffff; /* Putih untuk kartu form */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: #000000; /* Hitam untuk teks label */
+        }
+
+        .form-control {
+            background-color: #fbe9f8; /* Pink muda untuk input field */
+            color: #000000; /* Hitam untuk teks input */
+        }
+
+        .form-control:focus {
+            border-color: #e91e63; /* Pink yang lebih gelap saat fokus */
+            box-shadow: 0 0 5px rgba(233, 30, 99, 0.5);
+        }
+
+        .btn-custom {
+            width: 100%;
+            background-color: #e91e63; /* Pink gelap untuk tombol */
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Hover effect for the button */
+        .btn-custom:hover {
+            background-color: #d81b60; /* Lebih gelap saat tombol di-hover */
+        }
+
+        .btn-custom:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(216, 27, 96, 0.5);
+        }

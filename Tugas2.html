@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Aira</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f9e5f4; /* Pink muda untuk latar belakang */
+        }
+
+        .card {
+            border-radius: 10px;
+            background-color: #ffffff; /* Putih untuk kartu form */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: #000000; /* Hitam untuk teks label */
+        }
+
+        .form-control {
+            background-color: #fbe9f8; /* Pink muda untuk input field */
+            color: #000000; /* Hitam untuk teks input */
+        }
+
+        .form-control:focus {
+            border-color: #e91e63; /* Pink yang lebih gelap saat fokus */
+            box-shadow: 0 0 5px rgba(233, 30, 99, 0.5);
+        }
+
+        .btn-custom {
+            width: 100%;
+            background-color: #e91e63; /* Pink gelap untuk tombol */
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Hover effect for the button */
+        .btn-custom:hover {
+            background-color: #d81b60; /* Lebih gelap saat tombol di-hover */
+        }
+
+        .btn-custom:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(216, 27, 96, 0.5);
+        }
+    </style>
+  </head>
+  <body>
+    <form action="/">
+    <div class="d-flex justify-content-center mt-5"> 
+        <div class="card w-25">
+            <div class="card-body">
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="nama" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="tgl_lahir" class="form-label">Tanggal Lahir</label>
+                <input type="date" class="form-control" id="tgl_lahir" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
+                <select type="jenis_kelamin" class="form-control" id="jenis_kelamin" required>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+              </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="Alamat" class="form-label">Alamat</label>
+                <input type="text" class="form-control" id="alamat" rows="4" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+
+              <div class="button">
+              <button type="submit" class="btn btn-custom">Submit</button>
+          </div>
+          </div>
+          
+    </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
